@@ -8,27 +8,34 @@
 </head>
 <body>
     <h1>JavaScript Calculator</h1>
+    <button>Calculate</button>
     <script>
-        const value1 = parseInt(prompt ("Num1: "));
+        const button = document.querySelector('button');
+        button.addEventListener('click', showMyWork);
 
-        const calculator = prompt("Choice: +, -, *, /, %");
+        function showMyWork(){
+            const value1 = parseInt(prompt ("Num1: "));
 
-        const value2 = parseInt(prompt("Num2: "))
+            const calculator = prompt("Choice: +, -, *, /, %");
 
-        if (calculator === "+"){
-            alert(answer = value1 + value2);
-        } else if (calculator === "-"){
-            alert(answer = value1 - value2);
+            const value2 = parseInt(prompt("Num2: "))
+            
+            
+            if (calculator === "+"){
+                    alert(answer = value1 + value2);
+                } else if (calculator === "-"){
+                    alert(answer = value1 - value2);
 
-        } else if (calculator === "*"){
-            alert(answer = value1 * value2);
+                } else if (calculator === "*"){
+                    alert(answer = value1 * value2);
 
-        } else if (calculator === "/"){
-            alert(answer = value1 / value2);
+                } else if (calculator === "/"){
+                    alert(answer = value1 / value2);
 
-        } else if (calculator === "%"){
-            alert(answer = value1 % value2);
-        }
+                } else if (calculator === "%"){
+                    alert(answer = value1 % value2);
+                }
+            }
     </script>
 </body>
 </html>
